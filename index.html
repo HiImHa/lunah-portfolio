@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan Ngọc Hà</title>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Add jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Add a Favicon in HTML -->
+    <link rel="icon" type="image/x-icon" href="/img/girl.jpg">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-color-white">
+    <header class="bg-color-white flex-row flex-item-center">
+        <a href="#"
+            class="position-absolute bg-color-146af6 text-font-sigma text-font-35px-px text-color-white logo">HP</a>
+        <div class="position-absolute navbar">
+            <ul class="flex-row">
+                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand nav--active"
+                        href="#welcome">home</a></li>
+                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
+                        href="#about">about</a></li>
+                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
+                        href="#skills">skills</a></li>
+                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
+                        href="#experiencesEducation">experiences & education</a></li>
+                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
+                        href="#contact">contact</a></li>
+                <li><button onclick="changeTheme()" class='bx bxs-sun text-font-20px-px text-color-orange cursor-pointer'></button></li>
+            </ul>
+        </div>
+    </header>
+    <section id="welcome" class="flex-row flex-item-center">
+        <div>
+            <div style="max-width: 700px;" class="text-color-black text-font-quicksand text-font-17px">
+                <h1><span class="text-color-146af6 text-font-25px-px text--greeting">Hi!</span><span
+                        class="text-font-25px-px" id="iam"> I am</span>
+                </h1>
+                <h1 class="text-title">Phan Ngọc Hà </h1>
+                <h1 class="text-font-25px-px text-typing">Welcome to visit my page!</h1>
+                <h3 class="text-align-justify">"The question is not what have you done in this world
+                    but the question is, what can you do
+                    to make people believe that you have done?"
+                    - Sherlock Holmes.
+                </h3>
+                <div class="flex-column flex-item-start button-wrap">
+                    <a href="#" class="button"><i class='padding-right-10px bx bxs-cloud-download'></i>Download CV</a>
+                    <a href="#contact" class="button--slide-left"><span><i
+                                class='padding-right-10px bx bx-envelope'></i>Contact
+                            Me</span></a>
+                </div>
+            </div>
+        </div>
+        <img class="img-rem-welcome" src="/img/welcome-img-flat.svg" alt="">
+    </section>
+
+    <section id="about" class="flex-row flex-item-cente fade fade-bottom">
+        <img class="img-rem" src="/img/girl.jpg" alt="">
+        <div class="wrapper--left">
+            <h1 class="text-title">about me,<span
+                    class="text-lowercase-bolder text-font-20px text-font-quicksand text-color-black"> a few
+                    words</span></h1>
+            <div class="text-align-justify text-font-20px">
+                </br>
+                <p>I enjoy researching and believe I have good problem-solving skills. I am adaptable to all challenging
+                    situations. Besides, through the extracurricular activities I have participated in, I find myself
+                    enthusiastic, flexible, self-motivated. Adept at contribution to a highly collaboration work
+                    environment.</p>
+                </br>
+                <p>I am an active members when I joined club when I were in university also a strong communicator and
+                    able to effectively collaborate with clients and team members to understand their needs.</p>
+                </br>
+                <p>I am constantly seeking out new opportunities to improve my skills and knowledge. In my free time, I
+                    enjoy hobbies such as watching movies, reading book and playing chess. I am also an avid learner and
+                    am always looking for ways to improve my skills and knowledge. In addition to my technical skills, I
+                    am a reliable and team-oriented individual who is always ready to collaborate with team members.
+                </p>
+                </br>
+                <p>I am excited to work with you and create something amazing together.</p>
+                </br>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="flex-column flex-item-center bg-color-faebd749 fade fade-bottom">
+        <div class="text-font-50px-px text-title">
+            skills
+        </div>
+        <div class="text-uppercase-bolder text-font-35px-px text-color-black">
+            Programming Skills
+        </div>
+        <div class="flex-row">
+            <div class="flex-column flex-item-center tag">
+                <i class='bx bxl-html5'></i>
+                <p>HTML</p>
+            </div>
+            <div class="flex-column flex-item-center tag">
+                <i class='bx bxl-css3'></i>
+                <p>CSS</p>
+            </div>
+            <div class="flex-column flex-item-center tag">
+                <i class='bx bxl-javascript'></i>
+                <p>Javascript</p>
+            </div>
+        </div>
+        <div class="text-uppercase-bolder text-font-35px-px text-color-black">
+            Other Skills
+        </div>
+        <div class="flex-row">
+            <div class="flip-card">
+                <div class="position-relative flip-card-inner ">
+                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-front">
+                        <h1>Language Skill</h1>
+                        <img src="img/language.png" alt="Avatar" style="width:250px;height:250px;">
+                    </div>
+                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-back">
+                        <h1>English</h1>
+                        <p class="text-font-20px">Immediate level</p>
+                        <p class="text-font-20px">VNU-EPT Certificate of Vietnam National University: B1 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="position-relative flip-card-inner">
+                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-front">
+                        <h1>Other Skill</h1>
+                        <img src="img/language.png" alt="Avatar" style="width:250px;height:250px;">
+                    </div>
+                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-back">
+                        <h1>SCRUM</h1>
+                        <p class="text-font-20px">Through 2 projects at my old company, I worked on the scrum process
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="position-relative flip-card-inner">
+                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-front">
+                        <h1>Other Skill</h1>
+                        <img src="img/language.png" alt="Avatar" style="width:250px;height:250px;">
+                    </div>
+                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-back">
+                        <h1>GIT HUB</h1>
+                        <p class="text-font-20px">I'm using github for my personal project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experiencesEducation" class="position-relative bg-color-white fade fade-bottom">
+        <div class="position-absolute text-title">
+            experiences & education
+        </div>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>2017</h2>
+                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
+                        ea mazim
+                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+                        primis ea
+                        eam.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2016</h2>
+                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
+                        ea mazim
+                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+                        primis ea
+                        eam.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>2015</h2>
+                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
+                        ea mazim
+                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+                        primis ea
+                        eam.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2012</h2>
+                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
+                        ea mazim
+                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+                        primis ea
+                        eam.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>2011</h2>
+                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
+                        ea mazim
+                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+                        primis ea
+                        eam.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2007</h2>
+                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
+                        ea mazim
+                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+                        primis ea
+                        eam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-color-faebd749 flex-column flex-item-center fade fade-bottom">
+        <div class="text-title">
+            contact
+            <p class="text-color-black text-lowercase-bolder">Call or write <span>anytime</span></p>
+        </div>
+        <div class="flex-row contact-content">
+            <div class="flex-column">
+                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                    <i class='text-color-146af6 text-font-25px-px bx bx-male-female'></i> Gender: Female
+                </div>
+                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                    <i class='text-color-146af6 text-font-25px-px bx bxs-edit-location'></i> Location: District 3, Ho
+                    Chi
+                    Minh City
+                </div>
+                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                    <i class='text-color-146af6 text-font-25px-px bx bxs-calendar'></i> Birthdate: 03-11-1999
+                </div>
+
+                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                    <i class='text-color-146af6 text-font-25px-px bx bxs-envelope'></i> Email:&nbsp
+                    <a class="text-font-20px-px text-color-2e14f6"
+                        href="mailto:ngochaphan.work@gmail.com">ngochaphan.work@gmail.com</a>
+                </div>
+                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                    <i class='text-color-146af6 text-font-25px-px bx bxs-phone'></i> Phone: 038-796-3041
+                </div>
+                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                    <i class='text-color-146af6 text-font-25px-px bx bxl-github'></i> GitHub:&nbsp
+                    <a class="text-font-20px-px text-color-2e14f6"
+                        href="https://github.com/HiImHa">https://github.com/HiImHa</a>
+                </div>
+                <div class="button-wrap">
+                    <a class="button" href="mailto:ngochaphan.work@gmail.com"><i
+                            class='padding-right-10px bx bx-paper-plane'></i>Send me email
+                        directly</a>
+                </div>
+            </div>
+            <div class="flex-row flex-item-center wrapper--left">
+                <img class="img-rem" id="img__contact" src="/img/contact-gif.gif" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="flex-row flex-item-center">
+        Made with&nbsp <i class='bx bxs-heart'></i>&nbsp by Phan Ngoc Ha
+    </footer>
+    <script src="/javascript.js"></script>
+</body>
+
+</html>
