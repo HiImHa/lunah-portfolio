@@ -318,7 +318,7 @@ header {
 #welcome {
     height: 100vh;
     background-size: cover;
-    background-image: url(/img/wallpaper-blue.png);
+    background-image: url(img/wallpaper-blue.png);
 }
 
 h3 {
