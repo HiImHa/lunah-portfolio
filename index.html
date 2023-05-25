@@ -8,19 +8,20 @@
     <title>Phan Ngọc Hà</title>
     <!-- Import CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Add jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Add a Favicon in HTML -->
-    <link rel="icon" type="image/x-icon"sizes="16x16" href="img/girl.jpg">
+    <link rel="icon" type="image/x-icon" href="img/girl.jpg">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body class="bg-color-white">
     <header class="bg-color-white flex-row flex-item-center">
+        <!-- logo -->
         <a href="#"
-            class="position-absolute bg-color-146af6 text-font-sigma text-font-35px-px text-color-white logo">HP</a>
-        <div class="position-absolute navbar">
+            class="position-absolute bg-color-146af6 text-font-sigma text-font-35px-px text-color-white logo">HP
+        </a>
+        <!-- navbar -->
+        <div class="navbar">
             <ul class="flex-row">
                 <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand nav--active"
                         href="#welcome">home</a></li>
@@ -29,18 +30,24 @@
                 <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
                         href="#skills">skills</a></li>
                 <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
-                        href="#experiencesEducation">experiences & education</a></li>
+                        href="#experiencesEducation">Exp & Edu</a></li>
                 <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
                         href="#contact">contact</a></li>
-                <li><button onclick="changeTheme()" class='bx bxs-sun text-font-20px-px text-color-orange cursor-pointer'></button></li>
+                <li><button id="themeBtn" class='bx bxs-sun text-font-20px-px text-color-orange cursor-pointer'></button></li>
             </ul>
+        </div>
+        <div class="navbar-btn-toggle">
+            <i class='bx bxs-chevron-down display-block' ></i>
+            <i class='bx bxs-chevron-up display-none' ></i>
+
         </div>
     </header>
     <section id="welcome" class="flex-row flex-item-center">
-        <div>
-            <div style="max-width: 700px;" class="text-color-black text-font-quicksand text-font-17px">
-                <h1><span class="text-color-146af6 text-font-25px-px text--greeting">Hi!</span><span
-                        class="text-font-25px-px" id="iam"> I am</span>
+        <div class="welcome-text flex-column">
+            <div class="text-color-black text-font-quicksand text-font-17px">
+                <h1><span class="text-color-146af6 text-font-25px-px text--greeting">Hi</span >
+                    <span class="text-color-146af6 text-font-25px-px">!</span>
+                    <span class="text-font-25px-px" id="iam"> I am</span>
                 </h1>
                 <h1 class="text-title">Phan Ngọc Hà </h1>
                 <h1 class="text-font-25px-px text-typing">Welcome to visit my page!</h1>
@@ -50,10 +57,9 @@
                     - Sherlock Holmes.
                 </h3>
                 <div class="flex-column flex-item-start button-wrap">
-                    <a href="#" class="button"><i class='padding-right-10px bx bxs-cloud-download'></i>Download CV</a>
-                    <a href="#contact" class="button--slide-left"><span><i
-                                class='padding-right-10px bx bx-envelope'></i>Contact
-                            Me</span></a>
+                    <a href="#" class=" button"><i class='padding-right-10px bx bxs-cloud-download'></i>Download CV</a>
+                    <a href="#contact" class=" button--slide-left">
+                        <span><i class='padding-right-10px bx bx-envelope'></i>Contact Me</span></a>
                 </div>
             </div>
         </div>
@@ -62,11 +68,11 @@
 
     <section id="about" class="flex-row flex-item-cente fade fade-bottom">
         <img class="img-rem" src="img/girl.jpg" alt="">
-        <div class="wrapper--left">
-            <h1 class="text-title">about me,<span
-                    class="text-lowercase-bolder text-font-20px text-font-quicksand text-color-black"> a few
+        <div class="wrapper--left" >
+            <h1 id="aboutme-span" class="text-title">about me,<span 
+                    class="text-lowercase-bolder text-font-35px-px text-font-quicksand text-color-black"> a few
                     words</span></h1>
-            <div class="text-align-justify text-font-20px">
+            <div class="text-align-justify text-font-20px-px">
                 </br>
                 <p>I enjoy researching and believe I have good problem-solving skills. I am adaptable to all challenging
                     situations. Besides, through the extracurricular activities I have participated in, I find myself
@@ -116,24 +122,24 @@
                 <div class="position-relative flip-card-inner ">
                     <div class="position-absolute bg-color-146af6 text-color-white flip-card-front">
                         <h1>Language Skill</h1>
-                        <img src="img/language.png" alt="Avatar" style="width:250px;height:250px;">
+                        <img src="img/language.png" alt="Avatar" style="width:200px;height:170px;border-radius: 10px;">
                     </div>
                     <div class="position-absolute bg-color-146af6 text-color-white flip-card-back">
                         <h1>English</h1>
-                        <p class="text-font-20px">Immediate level</p>
-                        <p class="text-font-20px">VNU-EPT Certificate of Vietnam National University: B1 </p>
+                        <p class="text-font-20px-px">Immediate level</p>
+                        <p class="text-font-20px-px">VNU-EPT Certificate of Vietnam National University: B1 </p>
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="position-relative flip-card-inner">
                     <div class="position-absolute bg-color-146af6 text-color-white flip-card-front">
-                        <h1>Other Skill</h1>
-                        <img src="img/language.png" alt="Avatar" style="width:250px;height:250px;">
+                        <h1>Other Skills</h1>
+                        <img src="img/scrum.png" alt="Avatar" style="width:200px;height:170px;border-radius: 10px;">
                     </div>
                     <div class="position-absolute bg-color-146af6 text-color-white flip-card-back">
                         <h1>SCRUM</h1>
-                        <p class="text-font-20px">Through 2 projects at my old company, I worked on the scrum process
+                        <p class="text-font-20px-px">Through 2 projects at my old company, I worked on the scrum process
                         </p>
                     </div>
                 </div>
@@ -141,12 +147,12 @@
             <div class="flip-card">
                 <div class="position-relative flip-card-inner">
                     <div class="position-absolute bg-color-146af6 text-color-white flip-card-front">
-                        <h1>Other Skill</h1>
-                        <img src="img/language.png" alt="Avatar" style="width:250px;height:250px;">
+                        <h1>Tools</h1>
+                        <img src="img/tools.jfif" alt="Avatar" style="width:200px;height:170px;border-radius: 10px;">
                     </div>
                     <div class="position-absolute bg-color-146af6 text-color-white flip-card-back">
                         <h1>GIT HUB</h1>
-                        <p class="text-font-20px">I'm using github for my personal project</p>
+                        <p class="text-font-20px-px">I'm using github for my personal project</p>
                     </div>
                 </div>
             </div>
@@ -159,63 +165,32 @@
         <div class="timeline">
             <div class="container left">
                 <div class="content">
-                    <h2>2017</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim
-                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                        primis ea
-                        eam.</p>
+                    <h2>March 2022 – Present: </h2>
+                    <p>Worked at <a href="https://dxc.com/us/en">DXC Technology Vietnam </a> 
+                        <ul style="padding-left: 30px;">
+                            <li>Position: ServiceNow platform technical consultant </li>
+                            <li>Maintained, developed, debugged using JavaScript.  </li>
+                            <li>Worked with third-party and client related to RESTful APIs. </li>
+                            <li>Worked with another developer using Scrum and successfully delivered 2 projects. </li>
+                        </ul>
                 </div>
             </div>
             <div class="container right">
                 <div class="content">
-                    <h2>2016</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim
-                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                        primis ea
-                        eam.</p>
+                    <h2>December 2021 – March 2022: </h2>
+                    <p>Worked at <a href="https://www.inomar.edu.vn/homepage.html">Center for Innovative Materials & Architectures </a> 
+                        <ul style="padding-left: 30px;">
+                            <li>Position: Researcher</li>
+                            <li>Researched and investigated the related article and found the solution to apply for works logically.</li>
+                        </ul>
                 </div>
             </div>
             <div class="container left">
                 <div class="content">
-                    <h2>2015</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim
-                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                        primis ea
-                        eam.</p>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h2>2012</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim
-                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                        primis ea
-                        eam.</p>
-                </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                    <h2>2011</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim
-                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                        primis ea
-                        eam.</p>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h2>2007</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim
-                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                        primis ea
-                        eam.</p>
-                </div>
+                    <h2>2017 - December 2021</h2>
+                    <p>Studied at <a href="https://www.hcmus.edu.vn">University of Science, VNU-HCM - Faculty of Physics and Engineering Physics</a>
+                        <li>Graduated: December 2021 - Bachelor of Applied Physics</li>
+                    </div>
             </div>
         </div>
     </section>
@@ -225,28 +200,31 @@
             <p class="text-color-black text-lowercase-bolder">Call or write <span>anytime</span></p>
         </div>
         <div class="flex-row contact-content">
-            <div class="flex-column">
-                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+            <div class="flex-row flex-item-center wrapper--left">
+                <img class="img-rem" id="img__contact" src="img/contact-gif.gif" alt="">
+            </div>
+            <div id="contact-text-container" class="flex-column">
+                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
                     <i class='text-color-146af6 text-font-25px-px bx bx-male-female'></i> Gender: Female
                 </div>
-                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
                     <i class='text-color-146af6 text-font-25px-px bx bxs-edit-location'></i> Location: District 3, Ho
                     Chi
                     Minh City
                 </div>
-                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
                     <i class='text-color-146af6 text-font-25px-px bx bxs-calendar'></i> Birthdate: 03-11-1999
                 </div>
 
-                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
                     <i class='text-color-146af6 text-font-25px-px bx bxs-envelope'></i> Email:&nbsp
                     <a class="text-font-20px-px text-color-2e14f6"
                         href="mailto:ngochaphan.work@gmail.com">ngochaphan.work@gmail.com</a>
                 </div>
-                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
                     <i class='text-color-146af6 text-font-25px-px bx bxs-phone'></i> Phone: 038-796-3041
                 </div>
-                <div class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
+                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
                     <i class='text-color-146af6 text-font-25px-px bx bxl-github'></i> GitHub:&nbsp
                     <a class="text-font-20px-px text-color-2e14f6"
                         href="https://github.com/HiImHa">https://github.com/HiImHa</a>
@@ -257,16 +235,15 @@
                         directly</a>
                 </div>
             </div>
-            <div class="flex-row flex-item-center wrapper--left">
-                <img class="img-rem" id="img__contact" src="img/contact-gif.gif" alt="">
-            </div>
+            
         </div>
         </div>
     </section>
-    <footer class="flex-row flex-item-center">
+    <footer>
         Made with&nbsp <i class='bx bxs-heart'></i>&nbsp by Phan Ngoc Ha
     </footer>
-    <script src="javascript.js"></script>
+    <!-- Import JS -->
+    <script src="/javascript.js"></script>
 </body>
 
 </html>
