@@ -327,13 +327,14 @@ header {
 
 .navbar-btn-toggle{
     position: absolute;
-    top: 20px;
-    right: 50px;
+    top: 10px;
+    right: 0;
     color: #fff;
     font-size: 30px;
     background-color: #3B82F6;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 3px;
+    padding-right: 10px;
+    border-radius: 10px 0px 0px 10px ;
     display: none;
     cursor: pointer;
 }
@@ -663,9 +664,11 @@ footer i {
     }
     .navbar-btn-toggle {
         display: block;
+        top: 25px;
     }
     .navbar{
         top: 100px;
+        right: 10px;
         width: 190px;
         background-color: rgba(113, 173, 219, 0.248);
         border-radius: 20px;
@@ -719,7 +722,10 @@ footer i {
 /* Media queries - Responsive timeline on screens LESS than 640px wide */
 
 @media screen and (max-width: 640px) {
-
+    /* For Header */
+    header {
+        height: 50px;
+    }
     .flex-row {
         display: flex;
         flex-direction: column;
@@ -753,7 +759,9 @@ footer i {
         display: flex;
         flex-direction: column;
     }
-
+    section{
+        padding: 30px;
+    }
     
     /* For BTN*/ 
     .button{
@@ -802,9 +810,11 @@ footer i {
     }
     .navbar-btn-toggle {
         display: block;
+        top: 5px;
     }
     .navbar{
-        top: 100px;
+        top: 55px;
+        right: 10px;
         width: 190px;
         background-color: rgba(113, 173, 219, 0.248);
         border-radius: 20px;
