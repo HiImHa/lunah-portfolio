@@ -623,6 +623,7 @@ footer i {
     .welcome-text{
         width: 600px;
     }
+    
     /* For BTN*/ 
     .button{
         padding: 10px;
@@ -754,6 +755,9 @@ footer i {
     .welcome-text{
         width: 300px;
     }
+    #welcome {
+        padding-top: 300px;
+    }
     /* For ABOUT ME SECTION */ 
     #aboutme-span{
         display: flex;
@@ -802,6 +806,9 @@ footer i {
         width: 300px;
         height: 300px;
         margin-right: 0px;
+    }
+    #contact p {
+    margin-left: 0px;
     }
     /* For NAVBAR */ 
     .navbar ul {
