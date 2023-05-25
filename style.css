@@ -343,7 +343,7 @@ header {
 
 #welcome {
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 200px;
     background-size: cover;
     background-image: url(img/wallpaper-blue.png);
 }
