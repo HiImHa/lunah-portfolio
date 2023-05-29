@@ -7,72 +7,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phan Ngọc Hà</title>
     <!-- Import CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/background-color.css">    
+    <link rel="stylesheet" href="css/reponsive-tablet.css">
+    <link rel="stylesheet" href="css/reponsive-mobile.css">
     <!-- Add a Favicon in HTML -->
     <link rel="icon" type="image/x-icon" href="img/girl.jpg">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body class="bg-color-white">
-    <header class="bg-color-white flex-row flex-item-center">
+<body class="bg--color">
+
+    <!-- Header -->
+    <header class="bg-header--color flex--row flex--item-center">
         <!-- logo -->
-        <a href="#"
-            class="position-absolute bg-color-146af6 text-font-sigma text-font-35px-px text-color-white logo">HP
+        <a href="#" id="logo"
+            class="bg-theme--color text--color-white text--font-35px position-absolute text--font-sigma">HP
         </a>
         <!-- navbar -->
-        <div class="navbar">
-            <ul class="flex-row">
-                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand nav--active"
+        <div id="nav">
+            <ul class="flex--row">
+                <li><a class="text--font-20px text-uppercase-bolder text--font-quicksand nav--active"
                         href="#welcome">home</a></li>
-                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
-                        href="#about">about</a></li>
-                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
-                        href="#skills">skills</a></li>
-                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
+                <li><a class="text--font-20px text-uppercase-bolder text--font-quicksand" href="#about">about</a></li>
+                <li><a class="text--font-20px text-uppercase-bolder text--font-quicksand" href="#skills">skills</a></li>
+                <li><a class="text--font-20px text-uppercase-bolder text--font-quicksand"
                         href="#experiencesEducation">Exp & Edu</a></li>
-                <li><a class="text-uppercase-bolder text-color-black text-font-20px-px text-font-quicksand"
-                        href="#contact">contact</a></li>
-                <li><button id="themeBtn" class='bx bxs-sun text-font-20px-px text-color-orange cursor-pointer'></button></li>
+                <li><a class="text--font-20px text-uppercase-bolder text--font-quicksand" href="#contact">contact</a>
+                </li>
             </ul>
         </div>
-        <div class="navbar-btn-toggle">
-            <i class='bx bxs-chevron-down display-block' ></i>
-            <i class='bx bxs-chevron-up display-none' ></i>
-
+        <div id="theme" class="cursor-pointer">
+            <img src="img/icon/icon-theme-general.png" style="width: 25px;height: 25px;">
+        </div>
+        <div id="theme-dropdown">
+            <ul class="flex--column">
+                <li id="blue-light" class="cursor-pointer">
+                    <img src="img/icon/icon-theme-blue-light.png" style="width: 25px;height: 25px;">
+                    <button class='text--font-15px bx bxs-sun text--color-light'></button>
+                    <span class="text--color-blue">Blue</span><span class="text--color-light"> Light</span>
+                </li>
+                <li id="blue-dark" class="cursor-pointer">
+                    <img src="img/icon/icon-theme-blue-dark.png" style="width: 25px;height: 25px;">
+                    <button class='text--font-15px bx bxs-moon text--color-dark'></button>
+                    <span class="text--color-blue">Blue</span><span class="text--color-dark"> Dark</span>
+                </li>
+                <li id="pink-light" class="cursor-pointer">
+                    <img src="img/icon/icon-theme-pink-light.png" style="width: 25px;height: 25px;">
+                    <button class='text--font-15px bx bxs-sun text--color-light'></button>
+                    <span class="text--color-pink">Pink</span><span class="text--color-light"> Light</span>
+                </li>
+                <li id="pink-dark" class="cursor-pointer">
+                    <img src="img/icon/icon-theme-pink-dark.png" style="width: 25px;height: 25px;">
+                    <button class='text--font-15px bx bxs-moon text--color-dark'></button>
+                    <span class="text--color-pink">Pink</span><span class="text--color-dark"> Dark</span>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-btn--toggle">
+            <i class='bx bxs-chevron-down display-block'></i>
+            <i class='bx bxs-chevron-up display-none'></i>
         </div>
     </header>
-    <section id="welcome" class="flex-row flex-item-center">
-        <div class="welcome-text flex-column">
-            <div class="text-color-black text-font-quicksand text-font-17px">
-                <h1><span class="text-color-146af6 text-font-25px-px text--greeting">Hi</span >
-                    <span class="text-color-146af6 text-font-25px-px">!</span>
-                    <span class="text-font-25px-px" id="iam"> I am</span>
-                </h1>
-                <h1 class="text-title">Phan Ngọc Hà </h1>
-                <h1 class="text-font-25px-px text-typing">Welcome to visit my page!</h1>
-                <h3 class="text-align-justify">"The question is not what have you done in this world
-                    but the question is, what can you do
-                    to make people believe that you have done?"
-                    - Sherlock Holmes.
-                </h3>
-                <div class="flex-column flex-item-start button-wrap">
-                    <a href="#" class=" button"><i class='padding-right-10px bx bxs-cloud-download'></i>Download CV</a>
-                    <a href="#contact" class=" button--slide-left">
-                        <span><i class='padding-right-10px bx bx-envelope'></i>Contact Me</span></a>
-                </div>
+
+    <!-- Welcome Section-->
+    <section id="welcome" class="flex--row flex--item-center">
+        <div id="welcome-content" class="flex--column text--font-quicksand ">
+            <h1><span id="greeting" class="text-color-black text-font-25px">Hi</span>
+                <span class="text--color-black text-font-25px">!</span>
+                <span id="iam" class="text--color-blue text-font-25px"> I am</span>
+            </h1>
+            <h1 class="text-title text--color-blue">Phan Ngọc Hà </h1>
+            <h1 class="text--font-25px text-typing ">Welcome to visit my page!</h1>
+            <h3 class="text--color-black text--align-justify">"The question is not what have you done in this world
+                but the question is, what can you do
+                to make people believe that you have done?"
+                - Sherlock Holmes.
+            </h3>
+            <div class="flex--column button-wrap flex--item-start ">
+                <a href="#" class="button"><i class='padding--right-10px bx bxs-cloud-download'></i>Download CV</a>
+                <a href="#contact" class="button--slide-left">
+                    <span><i class='padding--right-10px bx bx-envelope'></i>Contact Me</span></a>
             </div>
         </div>
-        <img class="img-rem-welcome" src="img/welcome-img-flat.svg" alt="">
+        <img id="img-welcome" src="img/welcome-img-flat.svg" alt="">
     </section>
-
-    <section id="about" class="flex-row flex-item-cente fade fade-bottom">
-        <img class="img-rem" src="img/girl.jpg" alt="">
+    
+    <!-- About Section -->
+    <section id="about" class="flex--row flex--item-center fade fade-bottom">
+        <img class="img-section" src="img/girl.jpg" alt="">
         <div class="wrapper--left" >
-            <h1 id="aboutme-span" class="text-title">about me,<span 
-                    class="text-lowercase-bolder text-font-35px-px text-font-quicksand text-color-black"> a few
+            <h1 class="text--color-blue flex--row flex--item-center text-title">about me,<span 
+                    class="text--color-black text--font-35px text-lowercase-bolder text-font-quicksand">&nbsp;a few
                     words</span></h1>
-            <div class="text-align-justify text-font-20px-px">
+            <div class="text--align-justify text--font-20px text--color-black">
                 </br>
                 <p>I enjoy researching and believe I have good problem-solving skills. I am adaptable to all challenging
                     situations. Besides, through the extracurricular activities I have participated in, I find myself
@@ -93,38 +126,40 @@
             </div>
         </div>
     </section>
-    <section id="skills" class="flex-column flex-item-center bg-color-faebd749 fade fade-bottom">
-        <div class="text-font-50px-px text-title">
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg--color-blue-light flex--column flex--item-center fade fade-bottom">
+        <div class="text--color-blue text--font-50px text-title">
             skills
         </div>
-        <div class="text-uppercase-bolder text-font-35px-px text-color-black">
+        <div class="text--font-35px text--color-black text-uppercase-bolder">
             Programming Skills
         </div>
-        <div class="flex-row">
-            <div class="flex-column flex-item-center tag">
+        <div class="flex--row">
+            <div class="flex--column flex--item-center tag">
                 <i class='bx bxl-html5'></i>
                 <p>HTML</p>
             </div>
-            <div class="flex-column flex-item-center tag">
+            <div class="flex--column flex--item-center tag">
                 <i class='bx bxl-css3'></i>
                 <p>CSS</p>
             </div>
-            <div class="flex-column flex-item-center tag">
+            <div class="flex--column flex--item-center tag">
                 <i class='bx bxl-javascript'></i>
                 <p>Javascript</p>
             </div>
         </div>
-        <div class="text-uppercase-bolder text-font-35px-px text-color-black">
+        <div class="text--font-35px text--color-black text-uppercase-bolder">
             Other Skills
         </div>
-        <div class="flex-row">
+        <div class="flex--row">
             <div class="flip-card">
                 <div class="position-relative flip-card-inner ">
-                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-front">
+                    <div class="text--color-white bg--color-blue position-absolute flip-card-front">
                         <h1>Language Skill</h1>
                         <img src="img/language.png" alt="Avatar" style="width:200px;height:170px;border-radius: 10px;">
                     </div>
-                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-back">
+                    <div class="text--color-white bg--color-blue position-absolute flip-card-back">
                         <h1>English</h1>
                         <p class="text-font-20px-px">Immediate level</p>
                         <p class="text-font-20px-px">VNU-EPT Certificate of Vietnam National University: B1 </p>
@@ -133,11 +168,11 @@
             </div>
             <div class="flip-card">
                 <div class="position-relative flip-card-inner">
-                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-front">
+                    <div class="text--color-white bg--color-blue position-absolute flip-card-front">
                         <h1>Other Skills</h1>
                         <img src="img/scrum.png" alt="Avatar" style="width:200px;height:170px;border-radius: 10px;">
                     </div>
-                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-back">
+                    <div class="text--color-white bg--color-blue position-absolute flip-card-back">
                         <h1>SCRUM</h1>
                         <p class="text-font-20px-px">Through 2 projects at my old company, I worked on the scrum process
                         </p>
@@ -146,27 +181,29 @@
             </div>
             <div class="flip-card">
                 <div class="position-relative flip-card-inner">
-                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-front">
+                    <div class="text--color-white bg--color-blue position-absolute flip-card-front">
                         <h1>Tools</h1>
                         <img src="img/tools.jfif" alt="Avatar" style="width:200px;height:170px;border-radius: 10px;">
                     </div>
-                    <div class="position-absolute bg-color-146af6 text-color-white flip-card-back">
+                    <div class="text--color-white bg--color-blue position-absolute flip-card-back">
                         <h1>GIT HUB</h1>
-                        <p class="text-font-20px-px">I'm using github for my personal project</p>
+                        <p class="text--font-20px">I'm using github for my personal project</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="experiencesEducation" class="position-relative bg-color-white fade fade-bottom">
-        <div class="position-absolute text-title">
+
+    <!--Experiences & education Section -->
+    <section id="experiencesEducation" class="bg--color-white position-relative fade fade-bottom">
+        <div class="text--color-blue position-absolute text-title">
             experiences & education
         </div>
         <div class="timeline">
             <div class="container left">
-                <div class="content">
+                <div class="content bg--color-white text--color-black">
                     <h2>March 2022 – Present: </h2>
-                    <p>Worked at <a href="https://dxc.com/us/en">DXC Technology Vietnam </a> 
+                    <p>Worked at <a class="text--color-blue" href="https://dxc.com/us/en">DXC Technology Vietnam </a> 
                         <ul style="padding-left: 30px;">
                             <li>Position: ServiceNow platform technical consultant </li>
                             <li>Maintained, developed, debugged using JavaScript.  </li>
@@ -176,57 +213,59 @@
                 </div>
             </div>
             <div class="container right">
-                <div class="content">
+                <div class="content bg--color-white text--color-black">
                     <h2>December 2021 – March 2022: </h2>
-                    <p>Worked at <a href="https://www.inomar.edu.vn/homepage.html">Center for Innovative Materials & Architectures </a> 
+                    <p>Worked at <a class="text--color-blue"  href="https://www.inomar.edu.vn/homepage.html">Center for Innovative Materials & Architectures </a> 
                         <ul style="padding-left: 30px;">
                             <li>Position: Researcher</li>
                             <li>Researched and investigated the related article and found the solution to apply for works logically.</li>
                         </ul>
                 </div>
             </div>
-            <div class="container left">
-                <div class="content">
+            <div class="container left ">
+                <div class="content bg--color-white text--color-black">
                     <h2>2017 - December 2021</h2>
-                    <p>Studied at <a href="https://www.hcmus.edu.vn">University of Science, VNU-HCM - Faculty of Physics and Engineering Physics</a>
+                    <p>Studied at <a class="text--color-blue" href="https://www.hcmus.edu.vn">University of Science, VNU-HCM - Faculty of Physics and Engineering Physics</a>
                         <li>Graduated: December 2021 - Bachelor of Applied Physics</li>
                     </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="bg-color-faebd749 flex-column flex-item-center fade fade-bottom">
-        <div class="text-title">
+         
+    <!-- Contact Section -->
+    <section id="contact" class="bg--color-blue-light flex--column flex--item-center fade fade-bottom">
+        <div class="text--color-blue text-title">
             contact
-            <p class="text-color-black text-lowercase-bolder">Call or write <span>anytime</span></p>
+            <p class="text--color-black text-lowercase-bolder">Call or write <span class="text--color-blue">anytime</span></p>
         </div>
-        <div class="flex-row contact-content">
-            <div class="flex-row flex-item-center wrapper--left">
-                <img class="img-rem" id="img__contact" src="img/contact-gif.gif" alt="">
+        <div class="flex--row contact-content">
+            <div class="flex--row flex--item-center wrapper--left">
+                <img class="img-section" src="img/contact-gif.gif" alt="">
             </div>
-            <div id="contact-text-container" class="flex-column">
-                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
-                    <i class='text-color-146af6 text-font-25px-px bx bx-male-female'></i> Gender: Female
+            <div id="contact-text-container" class="flex--column">
+                <div id="contact-text" class="text--color-black text--font-20px flex--row flex--item-center contact-text">
+                    <i class='text--color-blue text--font-25px bx bx-male-female'></i>&nbsp;Gender: Female
                 </div>
-                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
-                    <i class='text-color-146af6 text-font-25px-px bx bxs-edit-location'></i> Location: District 3, Ho
+                <div id="contact-text" class="text--color-black text--font-20px flex--row flex--item-center contact-text">
+                    <i class='text--color-blue text--font-25px bx bxs-edit-location'></i>&nbsp;Location: District 3, Ho
                     Chi
                     Minh City
                 </div>
-                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
-                    <i class='text-color-146af6 text-font-25px-px bx bxs-calendar'></i> Birthdate: 03-11-1999
+                <div id="contact-text" class="text--color-black text--font-20px flex--row flex--item-center contact-text">
+                    <i class='text--color-blue text--font-25px bx bxs-calendar'></i>&nbsp;Birthdate: 03-11-1999
                 </div>
 
-                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
-                    <i class='text-color-146af6 text-font-25px-px bx bxs-envelope'></i> Email:&nbsp
-                    <a class="text-font-20px-px text-color-2e14f6"
+                <div id="contact-text" class="text--color-black text--font-20px flex--row flex--item-center contact-text">
+                    <i class='text--color-blue text--font-25px bx bxs-envelope'></i>&nbsp;Email:&nbsp
+                    <a class="text-font-20px text--color-blue"
                         href="mailto:ngochaphan.work@gmail.com">ngochaphan.work@gmail.com</a>
                 </div>
-                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
-                    <i class='text-color-146af6 text-font-25px-px bx bxs-phone'></i> Phone: 038-796-3041
+                <div id="contact-text" class="text--color-black text--font-20px flex--row flex--item-center contact-text">
+                    <i class='text--color-blue text--font-25px bx bxs-phone'></i>&nbsp;Phone: 038-796-3041
                 </div>
-                <div id="contact-text" class="flex-row flex-item-center text-color-black text-font-20px-px contact-text">
-                    <i class='text-color-146af6 text-font-25px-px bx bxl-github'></i> GitHub:&nbsp
-                    <a class="text-font-20px-px text-color-2e14f6"
+                <div id="contact-text" class="text--color-black text--font-20px flex--row flex--item-center contact-text">
+                    <i class='text--color-blue text--font-25px bx bxl-github'></i>&nbsp;GitHub:&nbsp
+                    <a class="text-font-20px text--color-blue"
                         href="https://github.com/HiImHa">https://github.com/HiImHa</a>
                 </div>
                 <div class="button-wrap">
@@ -235,15 +274,17 @@
                         directly</a>
                 </div>
             </div>
-            
         </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         Made with&nbsp <i class='bx bxs-heart'></i>&nbsp by Phan Ngoc Ha
     </footer>
+
     <!-- Import JS -->
-    <script src="javascript.js"></script>
+    <script src="/js/general.js"></script>
 </body>
 
 </html>

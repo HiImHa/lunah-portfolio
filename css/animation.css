@@ -1,0 +1,54 @@
+/* ANIMATION  */
+
+/* text typing */
+.text-typing {
+    display: inline-block;
+    white-space: nowrap;
+    /* keep text in one line */
+    overflow: hidden;
+    /* hide text behind the cursor */
+    animation: textTyping 3s steps(15) infinite;
+}
+
+@keyframes textTyping {
+
+    0%,
+    90%,
+    100% {
+        width: 0;
+    }
+
+    30%,
+    60% {
+        width: 325px;
+    }
+}
+
+/* fade bottom section */
+.fade {
+    opacity: 0;
+}
+
+.fade.fade--active {
+    opacity: 1;
+}
+
+.fade--active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+

@@ -1,0 +1,41 @@
+/* BACKGROUND COLOR */
+
+.bg-header--color {
+    background-color: #e8eafd;    
+}
+
+.bg-theme--color {
+    background-color: #146af6;
+}
+
+.bg--color {
+    background-color: #fff;
+}
+
+.bg--color-blue-light {
+    background-color: #f3f3f7;
+}
+
+.bg--color-blue {
+    background-color: #146af6;
+}
+
+
+.bg-color-black {
+    background-color: #000;
+}
+
+.bg-color-gray-700 {
+    background-color: rgb(55 65 81);
+}
+
+.bg-color-pink{
+    background-color: #D373C6;
+}
+
+
+
+
+.bg-color-blue-black {
+    background-color: #343938;
+}

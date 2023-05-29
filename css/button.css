@@ -1,0 +1,57 @@
+/* BUTTON  */
+/* button */
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.button-wrap {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    border-radius: 5px;
+    color: white;
+    padding: 10px 50px;
+    border: 2px #146af6 solid;
+    background-color: #146af6;
+}
+
+/* button slide left  */
+.button--slide-left {
+    position: relative;
+    color: black;
+    border: 2px #146af6 solid;
+    border-radius: 5px;
+    padding: 10px 59px;
+    transform: translate(-50%, -50%);
+    transition: all .35s;
+    left: 125px;
+    top: 50px;
+}
+
+.button--slide-left:hover {
+    color: #fff;
+}
+
+.button--slide-left span {
+    z-index: 2;
+    position: relative;
+}
+
+.button--slide-left:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #146af6;
+    transition: all .35s;
+}
+
+.button--slide-left:hover:after {
+    width: 100%;
+}

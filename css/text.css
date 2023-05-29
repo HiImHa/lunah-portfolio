@@ -1,0 +1,88 @@
+/* TEXT */
+
+/* hyperlink */
+a {
+    text-decoration: none;
+}
+
+/* title  */
+.text-title {
+    text-transform: uppercase;
+    font-weight: 1000px;
+    font-size: 50px;
+    font-family: 'Sigmar', cursive;
+}
+
+/* text aligh */
+.text--align-justify {
+    text-align: justify;
+}
+
+/* text style */
+.text-uppercase-bolder {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.text-lowercase-bolder {
+    font-weight: bolder;
+    text-transform: lowercase;
+}
+
+
+/* text font  */
+.text--font-sigma {
+    font-family: 'Sigmar', cursive;
+}
+
+.text--font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* text size  */
+.text--font-50px {
+    font-size: 50px;
+}
+
+.text--font-35px {
+    font-size: 35px;
+}
+
+.text--font-25px {
+    font-size: 25px;
+}
+
+.text--font-20px {
+    font-size: 20px;
+}
+.text--font-15px {
+    font-size: 15px;
+}
+
+/* text color */
+.text--color-white {
+    color: white;
+}
+
+.text--color-black {
+    color: #000;
+}
+
+.text--color-light {
+    color: orange;
+}
+
+.text--color-dark {
+    color: gray;
+}
+
+.text--color-blue {
+    color: #146af6;
+}
+
+.text--color-pink{
+    color: palevioletred;
+}
+
+
+
