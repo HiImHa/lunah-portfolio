@@ -1,0 +1,48 @@
+/* BACKGROUND COLOR */
+
+/* Dark  */
+.bg--color-black {
+    background-color: #000000;
+}
+.bg-header--color-gray {
+    background-color: rgb(55 65 81);
+}
+
+.bg--color-second-dark {
+    background-color: rgb(42, 44, 44);
+}
+
+
+/* Light */
+.bg--color {
+    background-color: #ffffff;
+}
+.bg--color-second-light {
+    background-color: #ebebeba1;
+}
+
+/* Blue*/
+.bg-header--color {
+    background-color: #e8eafd;    
+}
+
+.bg-theme--color {
+    background-color: #146af6;
+}
+
+
+
+/* Pink */
+.bg-header--color-pink {
+    background-color: #f4e4f2;    
+}
+
+.bg-theme--color-pink{
+    background-color: #D373C6;
+}
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+/* REPONSIVE */
+/* Media queries - Responsive timeline on screens MORE than 992px wide */
+@media screen and (min-width: 992px) {
+/* For NAVBAR */ 
+    #nav-btn--toggle,
+    #nav-btn--toggle-pink{
+        visibility:hidden;
+    }
+    
+
+}
